@@ -9,9 +9,7 @@
     <title>MediaPlayer</title>
 </head>
 <body>
-    <audio id="player" ontimeupdate="updateProgress();">
-		<source  id="source">	
-	</audio>
+    <audio src="./song/05 Feuer Frei!.mp3"></audio>	
     <main class="main-container">
         <header>
             <h1>Now Playing</h1>
@@ -22,19 +20,21 @@
             <p>Mutter</p>
         </section>
         <section id="main-container-progress">
-            <progress id="progress" value="0" max="100" ></progress>
-        </section>
-        <section id="main-container-controls">
-            <div class="timer" id="timer"></div>
-            <div class="container-controls--icons">
-                <span class="ramdon-icon"></span>
-                <span class="backward-icon" onclick="prevMusic();"></span>
-		        <span class="play-icon" onclick="togglePlay();" id="iconPlay"></span> 
-		        <span class="forward-icon" onclick="nextMusic();"></span>
-                <span class="repeat-icon"></span>
+            <div id="progress"></div>
+            <div class="container-time">
+                <p class="start">0:00</p>
+                <p class="end">3:22</p>
             </div>            
         </section>
-    </main>       
-    <script type="text/javascript" src="/script.js"></script>
+        <section id="main-container-controls">
+            <div class="container-controls--icons">
+                <a href=""><span class="ramdon-icon"></span></a>
+                <a href=""><span class="backward-icon"></span></a>
+		        <a href=""><span class="play-icon" id="iconPlay"></span></a> 
+		        <a href=""><span class="forward-icon"></span></a>
+                <a href=""><span class="repeat-icon"></span></a>
+            </div>         
+        </section>
+    </main>
 </body>
 </html>
