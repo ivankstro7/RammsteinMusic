@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <script defer src="./js/player.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>MediaPlayer</title>
 </head>
 <body>
+    <audio id="player" ontimeupdate="updateProgress();">
+		<source  id="source">	
+	</audio>
     <main class="main-container">
         <header>
             <h1>Now Playing</h1>
@@ -19,7 +21,18 @@
             <h1>Rammstein - Feuer frei</h1>
             <p>Mutter</p>
         </section>
+        <section id="main-container-progress">
+            <progress id="progress" value="0" max="100" ></progress>
+        </section>
         <section id="main-container-controls">
+            <div class="timer" id="timer"></div>
+            <div class="container-controls--icons">
+                <span class="ramdon-icon"></span>
+                <span class="backward-icon" onclick="prevMusic();"></span>
+		        <span class="play-icon" onclick="togglePlay();" id="iconPlay"></span> 
+		        <span class="forward-icon" onclick="nextMusic();"></span>
+                <span class="repeat-icon"></span>
+            </div>            
         </section>
     </main>       
 </body>

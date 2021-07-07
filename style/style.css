@@ -17,7 +17,7 @@ html{
 
 .main-container{
     display: grid;
-    grid-template-rows: 10% 50% auto auto;
+    grid-template-rows: 10% 60% auto auto;
     background-image: url(/assests/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,52 +64,71 @@ html{
     letter-spacing: 2px;
 }
 
-.main-container #timeline{
-    position: relative;
-	margin: 16px auto 0;
-	width: 80%;
+
+#main-container-progress{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.main-container #timeline span{
-    color: var(--primary-color);
-	font-size: 1.2rem;
-	position: absolute;
-	top: 0;
+#main-container-progress #progress{
+    width: 80%;
+    opacity: 0.5;
 }
 
-.main-container #timeline #current-time{
-    left: 0;
+#main-container-controls .container-controls--icons{
+	width: 69%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 29px;
 }
 
-.main-container #timeline #total-time{
-    right: 0;
+
+#main-container-controls{
+    width: 100%;
+    display: flex;
+    align-items: end;
 }
 
-.main-container #timeline .slider{
-    background-color: var(--primary-color);
-	border-radius: 8px;
-	cursor: pointer;
-	height: 2px;
-	position: relative;
-	width: 100%;
-    margin-top: 24px;
+#main-container-controls .container-controls--icons span{
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    margin-right: 24px;
 }
 
-.main-container #timeline .slider .progress{
-    background-color: var(--secundary-color);
-	height: 100%;
-	pointer-events: none;
-	position: absolute;
-	width: 0;
+
+#main-container-controls .container-controls--icons .ramdon-icon{
+    background-image: url(/assests/shuffle_black_24dp\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.main-container #timeline .slider .progress .pin{
-    background-color: white;
-	border-radius: 8px;
-	height: 8px;
-	position: absolute;
-	pointer-events: all;
-	right: -5px;
-	top: -3px;
-	width: 8px;
+#main-container-controls .container-controls--icons .backward-icon{
+    background-image: url(/assests/skip_previous_black_24dp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-container-controls .container-controls--icons .play-icon{
+    background-image: url(/assests/Vector.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+}
+
+#main-container-controls .container-controls--icons .forward-icon{
+    background-image: url(/assests/skip_next_black_24dp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-container-controls .container-controls--icons .repeat-icon{
+    background-image: url(/assests/repeat_black_24dp\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0;
 }
