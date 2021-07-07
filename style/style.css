@@ -63,3 +63,53 @@ html{
     color: var(--primary-color);
     letter-spacing: 2px;
 }
+
+.main-container #timeline{
+    position: relative;
+	margin: 16px auto 0;
+	width: 80%;
+}
+
+.main-container #timeline span{
+    color: var(--primary-color);
+	font-size: 1.2rem;
+	position: absolute;
+	top: 0;
+}
+
+.main-container #timeline #current-time{
+    left: 0;
+}
+
+.main-container #timeline #total-time{
+    right: 0;
+}
+
+.main-container #timeline .slider{
+    background-color: var(--primary-color);
+	border-radius: 8px;
+	cursor: pointer;
+	height: 2px;
+	position: relative;
+	width: 100%;
+    margin-top: 24px;
+}
+
+.main-container #timeline .slider .progress{
+    background-color: var(--secundary-color);
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
+	width: 0;
+}
+
+.main-container #timeline .slider .progress .pin{
+    background-color: white;
+	border-radius: 8px;
+	height: 8px;
+	position: absolute;
+	pointer-events: all;
+	right: -5px;
+	top: -3px;
+	width: 8px;
+}
