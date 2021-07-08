@@ -13,6 +13,7 @@ function elementos(){
 function play(){
     if((pista.paused==false) && (pista.ended==false)){
         pista.paused();
+        icon-play.className="pause-icon play-icon";
     }
 }
 
