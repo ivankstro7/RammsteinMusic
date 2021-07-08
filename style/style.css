@@ -45,6 +45,12 @@ html{
     align-items: center;
 }
 
+.main-container .main-container-song .container-song-title{
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+}
+
 .main-container .main-container-song img{
     width: 67%;
     margin-bottom: 32px;
@@ -66,25 +72,25 @@ html{
 
 
 #main-container-progress{
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    max-width: 312px;
+    height: 3px;
+    margin: 29px auto 0;
+    background-color: var(--primary-color);    
+    border-radius: 5px;
 }
 
 #main-container-progress #progress{
-    width: 80%;
-    border-radius: 4px;
+    width: 0;
+    border-radius: 5px;
     display: flex;
-    height: 4px;
-    background-color: var(--primary-color);
-    opacity: 0.5;
+    height: 3px;
+    background-color: var(--secundary-color);    
     margin-bottom: 10px;
 }
 
 #main-container-progress .container-time{
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template: repeat(1, 1fr) / repeat(2, 1fr);
 }
@@ -99,7 +105,6 @@ html{
     justify-content: end;
 }
 
-
 #main-container-controls .container-controls--icons{
 	width: 69%;
     display: flex;
@@ -107,7 +112,6 @@ html{
     align-items: center;
     margin: 0 auto 29px;
 }
-
 
 #main-container-controls{
     width: 100%;
