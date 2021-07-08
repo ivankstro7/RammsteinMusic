@@ -20,26 +20,28 @@ var seg = 0;
 
 
 function elementos(){
-    bar = document.getElementsById('main-container-progress');
+    bar = document.getElementById('main-container-progress');
     progress = document.getElementById('progress');
-    icon = document.getElementsById('iconPlay');
+    icon = document.getElementById('iconPlay');
     status = document.getElementsByClassName('play-icon')[0];
     song = document.getElementsByTagName('audio')[0];
     duration = document.getElementsByClassName('start')[0];
     time = document.getElementsByClassName('end')[0];
 
-    status.addEventListener('click', player, false);
+    icon.addEventListener('click', player, false);
 }
 
 function player(){
-    if((pista.paused==false) && (pista.ended==false)){
-        pista.pause();
+    console.log('player')
+    if((song.paused==false) && (song.ended==false)){
+        song.pause();
         icon.ClassName="play-icon";
     } else {
-        pista.play();
+        console.log('prueba')
+        song.play();
         icon.ClassName="play-icon";
 
-        load = setInterval(rep, 1);
+        //load = setInterval(rep, 1);
     }
 } 
 
