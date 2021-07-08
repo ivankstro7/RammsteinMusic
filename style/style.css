@@ -139,6 +139,14 @@ html{
     background-repeat: no-repeat;
 }
 
+#main-container-controls .container-controls--icons .pause-icon{
+    background-image: url(/assests/pause_black_24dp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+}
+
 #main-container-controls .container-controls--icons .play-icon{
     background-image: url(/assests/Vector.png);
     background-size: cover;
