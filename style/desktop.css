@@ -11,7 +11,7 @@ body{
     background-image: url(/assests/bg.jpg);
     width: 360px;
     height: 592px;
-    margin: 16px auto 0;
+    margin: 0 auto;
 }
 
 .main-container .container-album {
