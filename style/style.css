@@ -37,7 +37,7 @@ html{
     color: var(--primary-color);
 }
 
-..main-container .container-album{
+.main-container .container-album{
     display: none;
 }
 
