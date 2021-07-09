@@ -24,25 +24,25 @@ function elementos(){
     progress = document.getElementById('progress');
     icon = document.getElementById('iconPlay');
     status = document.getElementsByClassName('play-icon')[0];
-    song = document.getElementsByTagName('audio')[0];
+    //song = document.getElementsByTagName('audio')[0];
+    song = document.getElementById('song');
     duration = document.getElementsByClassName('start')[0];
     time = document.getElementsByClassName('end')[0];
+    
+    icon.addEventListener('click', function(){
+        console.log("here")
 
-    icon.addEventListener('click', player, false);
+            song.play();
+            this.ClassName="forward-icon";
+    
+            //load = setInterval(rep, 1);
+        
+    });
 }
 
-function player(){
-    console.log('player')
-    if((song.paused==false) && (song.ended==false)){
-        song.pause();
-        icon.ClassName="play-icon";
-    } else {
-        console.log('prueba')
-        song.play();
-        icon.ClassName="play-icon";
+function player(song){
 
-        //load = setInterval(rep, 1);
-    }
+
 } 
 
 
