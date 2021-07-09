@@ -18,7 +18,6 @@ var max = 346;
 var f = false;
 var seg = 0;
 
-
 function elementos(){
     bar = document.getElementById('main-container-progress');
     progress = document.getElementById('progress');
@@ -29,22 +28,22 @@ function elementos(){
     duration = document.getElementsByClassName('start')[0];
     time = document.getElementsByClassName('end')[0];
     
-    icon.addEventListener('click', function(){
-        console.log("here")
-
-            song.play();
-            this.ClassName="forward-icon";
-    
-            //load = setInterval(rep, 1);
-        
-    });
+    icon.addEventListener('click', player, false);
 }
 
-function player(song){
+function player(){
+    console.log('player')
+    if((song.paused==false) && (song.ended==false)){
+        song.pause();
+        icon.classList.remove("pause-icon");
+				icon.classList.add("play-icon");
+    } else {
+        console.log('prueba')
+        song.play();
 
-
+				icon.classList.remove("play-icon");
+				icon.classList.add("pause-icon");
+    }
 } 
-
-
 
 window.addEventListener('load', elementos, false);
