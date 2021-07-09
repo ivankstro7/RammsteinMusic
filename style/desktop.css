@@ -1,0 +1,82 @@
+body{
+    background-color: #15202B;
+}
+
+.main-container{
+    grid-template-rows: 10% 60% auto auto;
+    background-image: url(/assests/bg.jpg);
+    width: 360px;
+    height: 592px;
+    margin: 16px auto 0;
+}
+
+.main-container .container-album{
+    display: none;
+}
+
+.main-container .main-container-song{
+    justify-content: flex-end;
+}
+
+.main-container .container-album{
+    display: none;
+}
+
+.main-container .main-container-song img{
+    display: flex;
+    margin: 0 auto 29px;
+}
+
+.main-container .main-container-song h1 {
+    font-size: 1.8rem;
+}
+
+.main-container .main-container-song p{
+    font-size: 1.6rem;
+}
+
+#main-container-progress{
+    max-width: 312px;
+}
+
+#main-container-progress .container-time p{
+    font-size: 1.4rem;
+}
+
+#main-container-controls .container-controls--icons{
+    margin-bottom:  29px;
+}
+
+#main-container-controls .container-controls--icons span{
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+
+#main-container-controls .container-controls--icons .ramdon-icon{
+    background-image: url(/assests/shuffle_black_24dp\ 1.png);
+}
+
+#main-container-controls .container-controls--icons .backward-icon{
+    background-image: url(/assests/skip_previous_black_24dp.png);
+}
+
+#main-container-controls .container-controls--icons .pause-icon{
+    background-image: url(/assests/pause_black_24dp.png);
+    width: 45px;
+    height: 45px;
+}
+
+#main-container-controls .container-controls--icons .play-icon{
+    background-image: url(/assests/Vector.png);
+    width: 45px;
+    height: 45px;
+}
+
+#main-container-controls .container-controls--icons .forward-icon{
+    background-image: url(/assests/skip_next_black_24dp.png);
+}
+
+#main-container-controls .container-controls--icons .repeat-icon{
+    background-image: url(/assests/repeat_black_24dp\ 1.png);
+}
