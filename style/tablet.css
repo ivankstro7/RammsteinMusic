@@ -1,0 +1,80 @@
+.main-container{
+    display: grid;
+    grid-template-rows: 8% 57% auto auto auto;
+    background-image: url(/assests/Tablet/bg-tablet.jpg);
+}
+
+.main-container header{
+    align-items: center;
+}
+
+.main-container .container-album{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .main-container-song img{
+    display: none;
+}
+
+.main-container .main-container-song{
+    justify-content: center;
+}
+
+.main-container .main-container-song h1{
+    font-size: 2.0rem;
+}
+
+.main-container .main-container-song p{
+    font-size: 1.8rem;
+}
+
+#main-container-progress{
+    max-width: 478px;
+
+}
+
+#main-container-progress .container-time p{
+    font-size: 1.6rem;
+}
+
+#main-container-controls .container-controls--icons{
+    margin: 0 auto 49px;
+}
+
+
+#main-container-controls .container-controls--icons span{
+    width: 36px;
+    height: 36px;
+    margin-right: 36px;
+}
+
+#main-container-controls .container-controls--icons .ramdon-icon{
+    background-image: url(/assests/Tablet/icons-tablet/shuffle_black_24dp\ 1.png);
+}
+
+#main-container-controls .container-controls--icons .backward-icon{
+    background-image: url(/assests/Tablet/icons-tablet/skip_previous_black_24dp.png);
+
+}
+
+#main-container-controls .container-controls--icons .pause-icon{
+    background-image: url(/assests/Tablet/icons-tablet/pause_black_24dp\ 1.png);
+    width: 66px;
+    height: 66px;
+}
+
+#main-container-controls .container-controls--icons .play-icon{
+    background-image: url(/assests/Tablet/icons-tablet/Vector.png);
+    width: 66px;
+    height: 66px;
+}
+
+#main-container-controls .container-controls--icons .forward-icon{
+    background-image: url(/assests/Tablet/icons-tablet/skip_next_black_24dp.png);
+}
+
+#main-container-controls .container-controls--icons .repeat-icon{
+    background-image: url(/assests/Tablet/icons-tablet/repeat_black_24dp\ 1.png);
+}
